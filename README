@@ -1,0 +1,34 @@
+Catalyst-Engine-JobQueue-POE version 0.0.3
+
+DESCRIPTION
+
+This is a Catalyst Engine implementing a job queue with POE. It allows the
+launching of HTTP requests to the application at predetermined moments in time
+and the subsequent capturing of response to a logfile or an email address.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+    perl Makefile.PL
+    make
+    make test
+    make install
+
+DEPENDENCIES
+
+    Catalyst::Runtime
+
+    Email::MIME::Creator
+
+    Email::Send
+
+    POE::Component::Cron
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2006, Kiki
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
