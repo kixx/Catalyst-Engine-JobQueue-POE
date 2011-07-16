@@ -15,4 +15,7 @@ Revision history for Catalyst-Engine-JobQueue-POE
        - add method to retrieve job by ID
        - jobs returning an error status (>= 400) will be removed from job queue
 
-       
+0.04   Sat Jul 16 19:08:44 EET 2011
+       - fix shebang line in helper (fixes https://rt.cpan.org/Public/Bug/Display.html?id=56575)
+       - replace NEXT with MRO::Compat (fixes https://rt.cpan.org/Public/Bug/Display.html?id=64056)
+       - add version to some use statements (to line up with prerequisites)

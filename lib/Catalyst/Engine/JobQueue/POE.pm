@@ -19,7 +19,7 @@ use DateTime::Event::Random;
 use Catalyst::Exception;
 use Catalyst::JobQueue::Job;
 
-use version; our $VERSION = '0.0.3';
+use version; our $VERSION = '0.0.4';
 
 # Enable for helpful debugging information
 sub DEBUG { $ENV{CATALYST_POE_DEBUG} || 0 } 
@@ -458,7 +458,7 @@ Catalyst::Engine::JobQueue::POE - Cron-like job runner engine
 
 =head1 VERSION
 
-This document describes Catalyst::Engine::JobQueue::POE version 0.0.3
+This document describes Catalyst::Engine::JobQueue::POE version 0.0.4
 
 
 =head1 SYNOPSIS
