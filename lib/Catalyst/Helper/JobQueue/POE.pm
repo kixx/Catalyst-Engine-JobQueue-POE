@@ -74,7 +74,7 @@ return 1;
 __DATA__
 
 __jobqueue__
-#!env perl -w
+#!/usr/bin/env perl -w
 
 BEGIN {
     $ENV{CATALYST_ENGINE} = 'JobQueue::POE';
