@@ -6,13 +6,13 @@ use base 'Catalyst::Engine::CGI';
 use Carp;
 use Data::Dumper;
 use Email::MIME::Creator;
-use Email::Send;
+use Email::Send 2.15;
 use File::Spec;
 use IO::File;
 use Scalar::Util qw/refaddr/;
 
 use POE;
-use POE::Component::Cron;
+use POE::Component::Cron 0.014;
 use DateTime::Event::Cron;
 use DateTime::Event::Random;
 
