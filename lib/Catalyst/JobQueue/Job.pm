@@ -10,7 +10,7 @@ __PACKAGE__->mk_accessors(
 );
 
 use Carp;
-use NEXT;
+use MRO::Compat;
 use Scalar::Util qw/refaddr/;
 
 use version; our $VERSION = qv('0.0.1');
@@ -20,7 +20,7 @@ sub DEBUG { $ENV{CATALYST_DEBUG} || 0; }
 sub new {
     my ($self, @args) = @_;
 
-    $self = $self->NEXT::new( @args );
+    $self = $self->maybe::next::method( @args );
     $self->ID( refaddr($self) );
     $self->flags( {} ) unless $self->flags;
     return $self;
